@@ -1,3 +1,8 @@
+---
+name: 二阶思维
+description: "二阶思维——然后呢？然后呢？沿因果链追2-3步，识别非预期后果。"
+---
+
 # Second-Order Thinking
 
 A cognitive base that shifts reasoning from "what happens next?" to "and then what? and then what?" — tracing consequences 2-3 steps forward, testing counterfactuals, and detecting nonlinear tipping points.
