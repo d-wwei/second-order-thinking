@@ -1,0 +1,27 @@
+schema_version: 1
+name: second-order-thinking
+tier: 6
+
+triggers:
+  - if: "Proposing an action or recommendation"
+    then: "Ask 'and then what?' at least twice. At each step, assign rough likelihood (high/medium/low) and magnitude (large/moderate/small)"
+    action_type: require_verification
+  - if: "Recommending an action without analyzing the null scenario"
+    then: "Explicitly analyze: 'What happens if we do nothing?' Compare action path vs inaction path — net value is the delta"
+    action_type: require_justification
+  - if: "Tracing consequences and a network effect, trust threshold, capacity limit, or compounding loop is plausible"
+    then: "Flag the potential phase transition explicitly — second-order effects may dominate first-order calculations here"
+    action_type: pause_and_check
+  - if: "Listing consequences without ranking their likelihood"
+    then: "Rank each consequence by likelihood and magnitude. Stop tracing when consequences become too speculative or magnitude drops below decision threshold"
+    action_type: require_evidence
+
+activation:
+  - "Making strategic decisions or recommendations with downstream consequences"
+  - "Evaluating a proposed change that could trigger cascading effects"
+  - "Comparing action vs inaction scenarios"
+  - "Analyzing decisions near potential tipping points"
+
+recommends:
+  - "systems-thinking"
+  - "temporal-wisdom"
